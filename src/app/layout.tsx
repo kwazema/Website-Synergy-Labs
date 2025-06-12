@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Montserrat } from 'next/font/google'
 import '@/styles/globals.css'
 import SmoothScroll from '@/components/animations/SmoothScroll'
+import FloatingHeader from '@/components/ui/FloatingHeader'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
   authors: [{ name: 'Synergy Labs' }],
   creator: 'Synergy Labs',
   publisher: 'Synergy Labs',
+  icons: {
+    icon: '/assets/icons/SynergyLabs-Fabicon-120px.png',
+    shortcut: '/assets/icons/SynergyLabs-Fabicon-120px.png',
+  },
   openGraph: {
     title: 'Synergy Labs - IA + Automatizaciones + Marketing para PYMEs',
     description: 'Transformamos tu negocio con IA y automatizaciones. Ahorra 22% de costes y libera 240h/año por empleado.',
@@ -58,6 +63,7 @@ export default function RootLayout({
     <html lang="es" className={`${inter.variable} ${montserrat.variable}`}>
       <body className="font-inter">
         <SmoothScroll />
+        <FloatingHeader />
         {children}
       </body>
     </html>

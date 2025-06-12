@@ -20,7 +20,7 @@ export default function Footer() {
       { name: 'Blog', href: '/blog' },
       { name: 'Guías Gratuitas', href: '/recursos' },
       { name: 'Calculadora ROI', href: '/calculadora' },
-      { name: 'FAQ', href: '#faq' },
+      { name: 'FAQ', href: '/faqs' },
     ],
     legal: [
       { name: 'Política de Privacidad', href: '/privacy' },
@@ -68,9 +68,13 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2 space-y-6">
             <div>
-              <h3 className="text-2xl font-montserrat font-bold text-white mb-2">
-                Synergy Labs
-              </h3>
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/assets/logos/SYNERGYLabs.png" 
+                  alt="Synergy Labs" 
+                  className="h-8 w-auto"
+                />
+              </div>
               <p className="text-primary-blue font-medium mb-4">
                 IA + Automatizaciones + Marketing para PYMEs
               </p>

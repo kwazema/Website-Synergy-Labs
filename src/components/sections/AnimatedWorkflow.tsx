@@ -120,7 +120,7 @@ export default function AnimatedWorkflow() {
                 {/* Step Icon */}
                 <div className={`relative z-10 flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center text-2xl transition-all duration-500 ${
                   activeStep >= index 
-                    ? 'bg-primary-blue shadow-lg shadow-primary-blue/50 animate-pulse-glow' 
+                    ? 'bg-primary-blue electric-effect spark-effect' 
                     : 'bg-dark-gray border border-gray-600'
                 }`}>
                   {step.icon}

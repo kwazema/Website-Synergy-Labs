@@ -160,23 +160,108 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* Team Preview */}
-            <div className="contact-card glass-effect p-6 rounded-2xl">
-              <h3 className="text-lg font-montserrat font-semibold text-white mb-4">
-                Conoce al Equipo
-              </h3>
-              <div className="flex items-center space-x-4">
-                <div className="flex -space-x-2">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-blue to-accent-purple rounded-full flex items-center justify-center border-2 border-black">
-                    <span className="text-white font-semibold text-sm">AK</span>
+            {/* Team Section - Expanded */}
+            <div className="contact-card space-y-6">
+              <div className="glass-effect p-8 rounded-2xl">
+                <h3 className="text-2xl font-montserrat font-bold text-white mb-6 text-center">
+                  Conoce al <span className="text-gradient">Equipo Fundador</span>
+                </h3>
+                
+                <div className="space-y-8">
+                  {/* Andreu */}
+                  <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 p-6 bg-black/30 rounded-xl border border-primary-blue/20 hover:border-primary-blue/40 transition-all duration-300">
+                    <div className="relative">
+                      <img 
+                        src="/assets/team/Andreu_kwazema.png" 
+                        alt="Andreu Kwazema"
+                        className="w-24 h-24 rounded-full border-4 border-primary-blue object-cover shadow-lg"
+                      />
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-primary-blue rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">👨‍💻</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center md:text-left">
+                      <h4 className="text-xl font-montserrat font-bold text-white mb-2">
+                        Andreu Kwazema
+                      </h4>
+                      <p className="text-primary-blue font-semibold mb-3">
+                        Co-Founder & CTO
+                      </p>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        Desarrollador full-stack especializado en IA y automatización. 
+                        Más de 8 años creando soluciones tecnológicas que transforman negocios.
+                        Experto en integrations APIs y arquitecturas escalables.
+                      </p>
+                      <div className="flex items-center justify-center md:justify-start space-x-3 mt-4">
+                        <span className="text-xs bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">Python</span>
+                        <span className="text-xs bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">AI/ML</span>
+                        <span className="text-xs bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">APIs</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent-purple to-primary-blue rounded-full flex items-center justify-center border-2 border-black">
-                    <span className="text-white font-semibold text-sm">DM</span>
+
+                  {/* Diana */}
+                  <div className="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 p-6 bg-black/30 rounded-xl border border-accent-purple/20 hover:border-accent-purple/40 transition-all duration-300">
+                    <div className="relative">
+                      <img 
+                        src="/assets/team/Diana_Martin.png" 
+                        alt="Diana Martin"
+                        className="w-24 h-24 rounded-full border-4 border-accent-purple object-cover shadow-lg"
+                      />
+                      <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-accent-purple rounded-full flex items-center justify-center">
+                        <span className="text-white text-sm font-bold">🎨</span>
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center md:text-left">
+                      <h4 className="text-xl font-montserrat font-bold text-white mb-2">
+                        Diana Martin
+                      </h4>
+                      <p className="text-accent-purple font-semibold mb-3">
+                        Co-Founder & Chief Marketing Officer
+                      </p>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        Artista digital y estratega de marketing con visión creativa única. 
+                        Especializada en transformar conceptos técnicos complejos en 
+                        comunicación clara que conecta con PYMEs españolas.
+                      </p>
+                      <div className="flex items-center justify-center md:justify-start space-x-3 mt-4">
+                        <span className="text-xs bg-accent-purple/20 text-accent-purple px-2 py-1 rounded">Design</span>
+                        <span className="text-xs bg-accent-purple/20 text-accent-purple px-2 py-1 rounded">Marketing</span>
+                        <span className="text-xs bg-accent-purple/20 text-accent-purple px-2 py-1 rounded">UX</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div className="text-white font-semibold">Andreu & Diana</div>
-                  <div className="text-gray-400 text-sm">Founders de Synergy Labs</div>
+
+                {/* Team Stats */}
+                <div className="mt-8 grid grid-cols-3 gap-4 text-center">
+                  <div className="p-4 bg-black/30 rounded-lg">
+                    <div className="text-2xl font-bold text-primary-blue mb-1">8+</div>
+                    <div className="text-xs text-gray-400">Años experiencia</div>
+                  </div>
+                  <div className="p-4 bg-black/30 rounded-lg">
+                    <div className="text-2xl font-bold text-accent-purple mb-1">50+</div>
+                    <div className="text-xs text-gray-400">PYMEs transformadas</div>
+                  </div>
+                  <div className="p-4 bg-black/30 rounded-lg">
+                    <div className="text-2xl font-bold text-green-400 mb-1">98%</div>
+                    <div className="text-xs text-gray-400">Satisfacción cliente</div>
+                  </div>
+                </div>
+
+                {/* Contact Founders */}
+                <div className="mt-6 text-center">
+                  <p className="text-gray-400 text-sm mb-4">
+                    ¿Quieres hablar directamente con los fundadores?
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <button className="text-sm bg-primary-blue/20 hover:bg-primary-blue/30 text-primary-blue px-4 py-2 rounded-lg transition-colors duration-300">
+                      📧 Contactar a Andreu
+                    </button>
+                    <button className="text-sm bg-accent-purple/20 hover:bg-accent-purple/30 text-accent-purple px-4 py-2 rounded-lg transition-colors duration-300">
+                      📧 Contactar a Diana
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

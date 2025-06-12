@@ -23,7 +23,7 @@ export default function Hero() {
       ].filter(Boolean);
 
       if (elements.length > 0) {
-        animations.staggerFadeInUp(elements as Element[], 0.5);
+        animations.staggerFadeInUp(elements as Element[], 0.2);
       }
     }
   }, []);
